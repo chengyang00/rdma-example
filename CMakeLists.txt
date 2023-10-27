@@ -1,5 +1,7 @@
 # Author : Animesh Trivedi
 
+cmake_minimum_required (VERSION 3.1)
+
 project (rdma-example)
 
 set(PROJECT_SOURCE_DIR ${CMAKE_SOURCE_DIR}/src)
