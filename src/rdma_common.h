@@ -50,7 +50,7 @@
 /* MAX work requests */
 #define MAX_WR (8)
 /* Default port where the RDMA server is listening */
-#define DEFAULT_RDMA_PORT (20886)
+#define DEFAULT_RDMA_PORT (5001)
 /* socket synchronization message */
 #define SOCK_SYNC_MSG "sync"
 
