@@ -37,8 +37,7 @@ static int connect_with_socket(struct sockaddr_in *server_addr)
 {
 	char port_str[20];
 	sprintf(port_str, "%d", ntohs(server_addr->sin_port));
-	// sockfd = sock_create_bind(port_str);
-	sockfd = sock_create_bind("10001");
+	sockfd = sock_create_bind(port_str);
 	if (sockfd <= 0)
 	{
 		rdma_error("Failed to create server socket.\n")

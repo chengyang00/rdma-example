@@ -42,8 +42,7 @@ static int connect_with_socket(struct sockaddr_in *s_addr)
 {
 	char port_str[20];
 	sprintf(port_str, "%d", ntohs(s_addr->sin_port));
-	// peer_sockfd = sock_create_connect(inet_ntoa(s_addr->sin_addr), port_str);
-	peer_sockfd = sock_create_connect(inet_ntoa(s_addr->sin_addr), "10001");
+	peer_sockfd = sock_create_connect(inet_ntoa(s_addr->sin_addr), port_str);
 	if (peer_sockfd <= 0)
 	{
 		printf("Failed to create peer_sockfd");
